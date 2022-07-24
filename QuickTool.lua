@@ -10,11 +10,7 @@ local btn = toolbar:CreateButton(
 ) 
 
 function validateType(ins)
-	local status = false
-	if ins:IsA("BasePart") then
-		status = true
-	end
-	return status
+	return ins:IsA("BasePart")
 end
 
 btn.ClickableWhenViewportHidden = true
